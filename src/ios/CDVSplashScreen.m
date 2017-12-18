@@ -228,6 +228,9 @@
             {
                 imageName = [imageName stringByAppendingString:@"-Portrait"];
             }
+        } else if (device.iPhoneX)
+        { // does not support landscape
+            imageName = [imageName stringByAppendingString:@"-1100"];
         }
     }
 
@@ -282,6 +285,9 @@
                     break;
             }
         }
+    }else if (device.iPhoneX)
+    { // does not support landscape
+        imageName = [imageName stringByAppendingString:@"-2436h"];
     }
 
     return imageName;
