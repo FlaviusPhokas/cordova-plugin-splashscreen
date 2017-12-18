@@ -27,7 +27,7 @@ description: Control the splash screen for your app.
 
 # cordova-plugin-splashscreen-iphoneX
 
-This plugin fix white screen bug on iphoneX,before you install you cordova ios platform,replace your splash image 
+This plugin fix white screen bug on iphoneX, before you install you cordova ios platform, replace your splash image on cordova-plugin-splashscreen-iphoneX/src/ios/Resources/LaunchImage-1100-2436h.png.
 
 # cordova-plugin-splashscreen
 
