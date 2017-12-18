@@ -6,9 +6,7 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
-
  http://www.apache.org/licenses/LICENSE-2.0
-
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -174,7 +172,7 @@
     // this is appropriate for detecting the runtime screen environment
     device.iPhone6 = (device.iPhone && limit == 667.0);
     device.iPhone6Plus = (device.iPhone && limit == 736.0);
-
+    device.iPhoneX = (device.iPhone && limit == 812.0);
     return device;
 }
 
@@ -228,6 +226,9 @@
             {
                 imageName = [imageName stringByAppendingString:@"-Portrait"];
             }
+        } else if (device.iPhoneX)
+        { // does not support landscape
+            imageName = [imageName stringByAppendingString:@"-1100"];
         }
     }
 
@@ -282,6 +283,9 @@
                     break;
             }
         }
+    }else if (device.iPhoneX)
+    { // does not support landscape
+        imageName = [imageName stringByAppendingString:@"-2436h"];
     }
 
     return imageName;
