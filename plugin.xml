@@ -62,7 +62,7 @@
         <source-file src="src/ios/CDVSplashScreen.m" />
         <header-file src="src/ios/CDVViewController+SplashScreen.h" />
         <source-file src="src/ios/CDVViewController+SplashScreen.m" />
-
+	<resource-file src="src/ios/Resources/LaunchImage-1100-2436h.png"/>
 	    <framework src="CoreGraphics.framework" />
     </platform>
 
